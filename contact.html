@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Essentials – Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      label {
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+      input,
+      textarea {
+        padding: 0.6rem;
+        margin-top: 0.3rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+      }
+      textarea {
+        min-height: 120px;
+        resize: vertical;
+      }
+      form button {
+        margin-top: 1rem;
+        padding: 0.7rem 1.2rem;
+        background-color: #66bb6a;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .note {
+        font-size: 0.9rem;
+        color: #555;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">Eco&nbsp;Essentials</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section">
+      <h2>Contact Us</h2>
+      <p>
+        We’d love to hear from you! Whether you have questions about our
+        products, suggestions for new items, or partnership enquiries, please
+        get in touch using the form below.
+      </p>
+      <!-- Note: update the action attribute with your preferred form service or email address -->
+      <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="note">
+          This form uses a <code>mailto</code> action as a placeholder. To handle
+          submissions automatically, sign up for a free service like Formspree or
+          Google&nbsp;Forms and replace the
+          <code>action</code> attribute with the service’s endpoint.
+        </p>
+      </form>
+    </section>
+    <footer class="footer">
+      <p>&copy; 2025 Eco Essentials.</p>
+    </footer>
+  </body>
+</html>
